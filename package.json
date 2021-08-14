@@ -4,7 +4,7 @@
   "description": "test project with webdriverio and image comparison",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npx wdio run ./wdio.conf.js --spec example.e2e.js"
   },
   "author": "rakesh p",
   "license": "ISC",
