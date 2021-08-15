@@ -8,6 +8,7 @@ module.exports = class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open (path) {
+        browser.capabilities = {"goog:chromeOptions": {"args": ["--headless", "--no-sandbox", "--disable-dev-shm-usage"]}}
         return browser.url(`https://the-internet.herokuapp.com/${path}`)
     }
 }
